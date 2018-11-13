@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
 {% set version = "0.7dev" %}
-{% set sha256 = "7ca330e7d1728190bb25155abf729527ab6bcf3314503e36a4737f20719ea052" %}
+{% set sha256 = "fb9d84f826ced23f362e810137a8d74eadee4a4ec9ebce4e191a574d724ba4a2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   
-  fn: 8ab2bc648ebeef5f9c6b7368d260cd9c1b38a7fc.zip
-  url: https://github.com/ebroecker/canmatrix/archive/8ab2bc648ebeef5f9c6b7368d260cd9c1b38a7fc.zip
+  fn: b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
+  url: https://github.com/ebroecker/canmatrix/archive/b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
   entry_points:
@@ -32,6 +32,7 @@ requirements:
     - pyyaml
     - lxml
     - future
+    - attrs
 
 test:
   imports:
