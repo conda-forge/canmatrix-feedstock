@@ -1,5 +1,5 @@
 {% set name = "canmatrix" %}
-{% set version = "0.7dev" %}
+{% set version = "0.7" %}
 {% set sha256 = "fb9d84f826ced23f362e810137a8d74eadee4a4ec9ebce4e191a574d724ba4a2" %}
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
   entry_points:
