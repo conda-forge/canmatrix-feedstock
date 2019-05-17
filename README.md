@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About canmatrix
 ===============
 
@@ -44,8 +40,17 @@ supported file formats for export:
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/canmatrix-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/canmatrix-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3784&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/canmatrix-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
