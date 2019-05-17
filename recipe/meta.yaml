@@ -1,5 +1,5 @@
 {% set name = "canmatrix" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 {% set sha256 = "fb9d84f826ced23f362e810137a8d74eadee4a4ec9ebce4e191a574d724ba4a2" %}
 
 package:
