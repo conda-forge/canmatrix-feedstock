@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
 {% set version = "0.8" %}
-{% set sha256 = "56bb92fab07a7c06d1f323449ed159949b72b97809d4a830b704e91cc4cf8861" %}
+{% set sha256 = "424202efa91851a770a42d8b4ebb0f63d3f70f719907b346781d9930a4a7f269" %}
 
 package:
   name: {{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   
-  fn: canmatrix-0.8-py3-none-any.whl
-  url: https://files.pythonhosted.org/packages/d6/da/91a775a6aaf1c571659fbbe1dc0022913889e93d4d109d520c6bda79c889/canmatrix-0.8-py3-none-any.whl
+  fn: canmatrix-0.8-py2.py3-none-any.whl
+  url: https://files.pythonhosted.org/packages/6d/81/2e80f5fdf2de83473981560030e2d910ffe06718ce03fe6c135fe94ac9ea/canmatrix-0.8-py2.py3-none-any.whl
   sha256: {{ sha256 }}
 
 build:
