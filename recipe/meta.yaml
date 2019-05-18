@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
 {% set version = "0.8" %}
-{% set sha256 = "fb9d84f826ced23f362e810137a8d74eadee4a4ec9ebce4e191a574d724ba4a2" %}
+{% set sha256 = "9837ab53a407037ba8d5dbba235cecc69c4a7ff02f5221db721088815493f1d7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   
-  fn: b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
-  url: https://github.com/ebroecker/canmatrix/archive/b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
+  fn: canmatrix-0.8.tar.gz
+  url: https://files.pythonhosted.org/packages/50/b4/d2fadf4fa14e56e0fa3c95de8ce87b980e72530bb043f4d9f26d764f97c4/canmatrix-0.8.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -32,7 +32,7 @@ requirements:
     - pyyaml
     - lxml
     - future
-    - attrs
+    - attrs>=18.1.0
 
 test:
   imports:
