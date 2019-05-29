@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
 {% set version = "0.8" %}
-{% set sha256 = "25315d3294bb4fa923f965cb199e48045372c38afab0cdf026822a7115ad302b" %}
+{% set sha256 = "abb6c1a5d824c7c4021d86f074d490dd4af82832aea9d8c1a562403c3b7c6ebb" %}
 
 package:
   name: {{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   
-  fn: 2bcf1af8a780a4d776e58a569b124bf98e4d7e6b.zip
-  url: https://github.com/ebroecker/canmatrix/archive/2bcf1af8a780a4d776e58a569b124bf98e4d7e6b.zip
+  fn: master.zip
+  url: https://github.com/ebroecker/canmatrix/archive/master.zip
   sha256: {{ sha256 }}
 
 build:
