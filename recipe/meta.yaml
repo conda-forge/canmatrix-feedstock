@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
-{% set version = "0.7" %}
-{% set sha256 = "fb9d84f826ced23f362e810137a8d74eadee4a4ec9ebce4e191a574d724ba4a2" %}
+{% set version = "0.8" %}
+{% set sha256 = "abb6c1a5d824c7c4021d86f074d490dd4af82832aea9d8c1a562403c3b7c6ebb" %}
 
 package:
   name: {{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   
-  fn: b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
-  url: https://github.com/ebroecker/canmatrix/archive/b738b139ed6c1af009871ff356bd97dcfb2cc8ba.zip
+  fn: master.zip
+  url: https://github.com/ebroecker/canmatrix/archive/master.zip
   sha256: {{ sha256 }}
 
 build:
@@ -17,8 +17,8 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
   entry_points:
-    - cancompare = canmatrix.compare:main
-    - canconvert = canmatrix.convert:main
+    - cancompare = canmatrix.cli.compare:main
+    - canconvert = canmatrix.cli.convert:main
 
 requirements:
   build:
@@ -32,7 +32,7 @@ requirements:
     - pyyaml
     - lxml
     - future
-    - attrs
+    - attrs>=18.1.0
 
 test:
   imports:
