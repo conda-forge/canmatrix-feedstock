@@ -1,6 +1,6 @@
 {% set name = "canmatrix" %}
-{% set version = "0.8" %}
-{% set sha256 = "abb6c1a5d824c7c4021d86f074d490dd4af82832aea9d8c1a562403c3b7c6ebb" %}
+{% set version = "0.9" %}
+{% set sha256 = "6beecf12c53b0de90f1d8b33b8729fbe1513c0fe05a0b7f74e9e9616bb857b77" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
   entry_points:
     - cancompare = canmatrix.cli.compare:main
