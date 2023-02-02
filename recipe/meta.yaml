@@ -32,7 +32,7 @@ requirements:
     - pyyaml
     - lxml
     - future
-    - attrs>=18.1.0
+    - attrs >=18.1.0
 
 test:
   imports:
