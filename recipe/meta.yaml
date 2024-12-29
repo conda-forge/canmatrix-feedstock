@@ -9,20 +9,20 @@ package:
 source:
   
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
-  build:
-    - python >=3.8
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - xlwt
     - xlrd
     - xlsxwriter
@@ -35,6 +35,8 @@ requirements:
     - typing
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - canmatrix
     
